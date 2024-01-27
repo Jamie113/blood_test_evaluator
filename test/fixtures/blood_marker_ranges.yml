@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  marker_id: 1
+  lower_bound: 1
+  upper_bound: 1
+  range_name: MyString
+
+two:
+  marker_id: 1
+  lower_bound: 1
+  upper_bound: 1
+  range_name: MyString
