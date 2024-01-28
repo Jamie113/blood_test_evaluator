@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+
+  # Routes for BloodTestResultsController
+  resources :blood_test_results, only: [:new, :create, :show]
+
+  # Route for the index action of BloodMarkersController
+  resources :blood_markers, only: [:index]
 end

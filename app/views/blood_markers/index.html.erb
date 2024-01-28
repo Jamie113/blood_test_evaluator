@@ -1,0 +1,10 @@
+<h1>Blood Markers and Ranges</h1>
+
+<% @blood_markers.each do |marker| %>
+  <h3><%= marker.name %></h3>
+  <ul>
+    <% marker.blood_marker_ranges.each do |range| %>
+      <li><%= range.range_name %>: <%= range.lower_bound %> - <%= range.upper_bound %></li>
+    <% end %>
+  </ul>
+<% end %>

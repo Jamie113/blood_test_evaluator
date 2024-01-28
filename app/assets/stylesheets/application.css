@@ -13,3 +13,86 @@
  *= require_tree .
  *= require_self
  */
+
+/* Importing a Google Font - replace with your preferred font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Body styling */
+body {
+  background-color: #0A3C3B;
+  color: #FFFFFF;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Box sizing to include padding and border in the element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Standard padding and margin for all elements */
+* {
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Button and input[type="submit"] styling */
+button,
+input[type="submit"] {
+  background-color: #FF8D7D;
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for buttons */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #ffafaf;
+}
+
+/* Heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #EFEFEF;
+}
+
+/* Link styles */
+a {
+  color: #FFD700;
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container for centering content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  /* Other responsive styles as needed */
+}
+
+/* Utility class for text alignment */
+.text-center {
+  text-align: center;
+}
