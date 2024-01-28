@@ -5,11 +5,11 @@ class BloodTestResultsController < ApplicationController
 
   def create
     @results = []
-    if params[:file].present?
-      process_file(params[:file])
+    if params[:file].present? && params[:file].content_type == "text/csv"
+    process_file(params[:file])
       render :show
     else
-      flash.now[:alert] = "Please upload a file."
+      flash.now[:alert] = "Please upload a CSV file."
       render :new
     end
   end
