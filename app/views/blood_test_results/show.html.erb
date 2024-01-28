@@ -1,0 +1,9 @@
+<h1>Blood Test Results</h1>
+
+<ul>
+  <% @results.each do |result| %>
+    <li><%= result %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back', new_blood_test_result_path %>
