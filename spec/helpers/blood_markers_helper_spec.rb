@@ -10,6 +10,11 @@ require 'rails_helper'
 #     end
 #   end
 # end
+
 RSpec.describe BloodMarkersHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe '#format_marker_name' do
+    it 'formats the name of the blood marker correctly' do
+      expect(helper.format_marker_name('HCD')).to eq('Formatted HCD')
+    end
+  end
 end
